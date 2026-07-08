@@ -14,6 +14,7 @@ import StreamCard from "./components/StreamCard";
 import CategoryRail from "./components/CategoryRail";
 import LivePulse from "./components/LivePulse";
 import { streams, messages } from "./constants/mockData";
+import CurrentStream from "./components/CurrentStream";
 
 const sectionHeadingClass =
   "text-lg font-black tracking-[-0.02em] font-display text-foreground";
@@ -35,7 +36,7 @@ export default function App() {
 
         {/* Main content */}
         <main className="flex-1 overflow-y-auto">
-          <div className="max-w-7xl mx-auto px-4 py-6">
+          <div className="mx-auto px-4 py-6">
             {/* Featured stream */}
             <section className="mb-8">
               <div className="flex items-center gap-2 mb-3">
@@ -44,7 +45,7 @@ export default function App() {
               </div>
               <div className="grid lg:grid-cols-3 gap-4">
                 <div className="lg:col-span-2">
-                  <StreamCard stream={featured} large />
+                  <CurrentStream stream={featured} large />
                 </div>
                 {/* Live chat preview */}
                 <div className="rounded-xl overflow-hidden flex flex-col bg-card border border-border min-h-[280px]">
