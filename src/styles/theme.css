@@ -1,5 +1,11 @@
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Barlow', sans-serif;
+  --font-display: 'Barlow Condensed', sans-serif;
+}
+
 :root {
   --font-size: 16px;
   --background: #0B0E0F;

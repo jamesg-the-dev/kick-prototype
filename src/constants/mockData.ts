@@ -94,7 +94,7 @@ export const streams: Stream[] = [
     streamer: "Hikaru",
     game: "Chess",
     viewers: 18442,
-    thumbnail: "photo-1611329695518-1763fc1cd893",
+    thumbnail: "photo-1523875194681-bedd468c58bf",
     tags: ["English", "Chess"],
     initials: "HK",
     color: "#3498DB",
